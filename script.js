@@ -41,4 +41,7 @@ function hidePassword(element) {
 
   return "*".repeat(element.length)
 }
-console.log(hidePassword("Sara.pngk"));
+
+const capitaliseThird = (element) => element.substring(0, 2) + element[2].toUpperCase() + element.substring(2, element.length);
+
+console.log(capitaliseThird("Sara.pngk"));
