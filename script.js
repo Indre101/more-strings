@@ -1,7 +1,7 @@
 const userInput = document.querySelector("input[type=text]");
 const option = document.querySelector("select");
 const options = document.querySelectorAll("option");
-const userOutput = document.querySelector(".output");
+const userOutput = document.querySelector(".output h3");
 
 const inputValue = () => userInput.value;
 
@@ -63,6 +63,7 @@ options.forEach(op => op.selected = false);
 
 
 option.addEventListener("change", () => {
+  userOutput.dataset.aninamtion = "animate"
   let element = inputValue();
   let result;
   if (option[0].selected == true) {

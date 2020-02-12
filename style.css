@@ -51,11 +51,15 @@ input[type="text"],
 .output,
 select {
   font-size: 2vw;
+  padding: 0 3vw;
   height: 6vh;
   width: 70vw;
   background-color: white;
   border: none;
   margin: 2vw 0;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
 }
 
 form {
@@ -64,4 +68,20 @@ form {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.output h3 {
+  font-size: 2vw;
+  font-weight: normal;
+  opacity: 0;
+}
+
+.output h3[data-aninamtion="animate"] {
+  animation: textAppear 1s linear forwards 1;
+}
+
+@keyframes textAppear {
+  100% {
+    opacity: 1;
+  }
 }
