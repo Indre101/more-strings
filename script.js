@@ -6,7 +6,17 @@ const userOutput = document.querySelector(".output");
 const inputValue = () => userInput.value;
 
 const capitalise = (element) => element.charAt(0).toUpperCase() + element.substring(1, element.length);
-const findFirstName = (element) => element.substring(0, element.indexOf(" "));
+const findFirstName = (element) => {
+  if (element.indexOf(" ") == -1) {
+    return element
+  } else {
+    element = element.substring(0, element.indexOf(" "))
+  }
+
+  return element;
+}
+
+
 const getLengthOfName = element => findFirstName(element).length;
 
 
@@ -60,6 +70,7 @@ option.addEventListener("change", () => {
   } else if (option[1].selected == true) {
     result = capitalise(element)
   } else if (option[2].selected == true) {
+    console.log(findFirstName(element));
     result = findFirstName(element)
   } else if (option[3].selected == true) {
     result = getLengthOfName(element)
