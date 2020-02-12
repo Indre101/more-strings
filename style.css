@@ -19,7 +19,7 @@ h1 {
   color: white;
   text-align: center;
   padding: 0 0 4vw 0;
-  width: 80vw;
+  width: 60vw;
 }
 
 .bg-animation {
@@ -54,7 +54,7 @@ select {
   font-size: 2vw;
   padding: 0 3vw;
   height: 6vh;
-  width: 70vw;
+  width: 60vw;
   background-color: white;
   border: none;
   margin: 2vw 0;
