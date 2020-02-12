@@ -24,7 +24,7 @@ function getMiddleName(element) {
   const names = element.split(" ");
   let middleName
   if (names.length >= 2 && names[2].length >= 2) {
-    middleName = names[1];
+    middleName = names.slice(1, names.length - 1).join(" ");
   } else {
     middleName = "Middle name not found"
   }
