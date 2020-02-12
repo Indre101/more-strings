@@ -32,7 +32,13 @@ function getMiddleName(element) {
 }
 
 function checkFileExtension(element) {
-  return element.endsWith(".jpg") || element.endsWith(".png")
+  if (element.endsWith(".jpg")) {
+    return "It ends with .jpg"
+  } else if (element.endsWith(".png")) {
+    return "It's a .png"
+  } else {
+    return `It ends with ${element[element.length-1]}, but why though?`
+  }
 }
 
 function hidePassword(element) {
