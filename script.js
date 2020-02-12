@@ -36,4 +36,9 @@ function getMiddleName(element) {
 function checkFileExtension(element) {
   return element.endsWith(".jpg") || element.endsWith(".png")
 }
-console.log(checkFileExtension("Sara.pngk"));
+
+function hidePassword(element) {
+
+  return "*".repeat(element.length)
+}
+console.log(hidePassword("Sara.pngk"));
