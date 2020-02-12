@@ -66,7 +66,9 @@ option.addEventListener("change", () => {
   userOutput.dataset.aninamtion = "animate"
   let element = inputValue();
   let result;
-  if (option[0].selected == true) {
+  if (element.length <= 0) {
+    result = "You seem to not have written anything :/"
+  } else if (option[0].selected == true) {
     result = element
   } else if (option[1].selected == true) {
     result = capitalise(element)
